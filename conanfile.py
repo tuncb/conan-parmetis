@@ -5,7 +5,7 @@ class MetisConan(ConanFile):
     name = "parmetis"
     version = "4.0.3"
     settings = "os", "compiler", "build_type", "arch"
-    build_policy = "always"
+    build_policy = "missing"
     options = {
         "remove_rint_fix": [True, False],
         "remove_infinity_fix": [True, False],        
